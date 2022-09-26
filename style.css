@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(0, 0, 0);
+}
 
 .navbar-collapse {
   justify-content: end;
@@ -10,6 +13,7 @@
 .navbar {
   padding-right: 40px;
   padding-left: 40px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.267);
 }
 
 #nav {
@@ -19,13 +23,24 @@
   background-color: white;
 }
 
+/* nav bar links */
+.text-light {
+  font-size: 22px;
+}
+
+#brand {
+  font-size: 25px;
+}
+
 a:hover {
   background-color: rgba(255, 255, 255, 0.212);
   border-radius: 15px;
 }
-
-.text-light {
-  color: green;
+/* might change naming convention later this is temp */
+.container {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
 }
 
 @media only screen and (max-width: 414px) {
