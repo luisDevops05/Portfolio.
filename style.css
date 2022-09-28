@@ -13,7 +13,7 @@ body {
 .navbar {
   padding-right: 40px;
   padding-left: 40px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.267);
+  border-bottom: 1px solid rgba(7, 243, 184, 0.534);
 }
 
 #nav {
@@ -36,16 +36,69 @@ a:hover {
   background-color: rgba(255, 255, 255, 0.212);
   border-radius: 15px;
 }
+
+/* hero section */
+.hero {
+  border: solid white 1px;
+  display: grid;
+  grid-template-columns: 700px 400px;
+  justify-content: center;
+  align-content: center;
+  margin-top: 80px;
+  height: 600px;
+  gap: 20px;
+}
+
+.myInfo {
+  border: solid rgb(107, 189, 30) 1px;
+  height: 400px;
+}
+.myInfo h4 {
+  text-align: left;
+}
+.myInfo h2 {
+  text-align: left;
+  font-size: 42px;
+}
+.myInfo p {
+  text-align: left;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+.heroImg {
+  border: solid 1px blue;
+}
+
+.heroImg img {
+  height: 300px;
+  width: 300px;
+}
 /* might change naming convention later this is temp */
 .container {
   text-align: center;
   padding-top: 30px;
   color: white;
 }
-
+/* left off with having to play with the grid columns and making logo apear
+on top when screen size is reduced */
 @media only screen and (max-width: 414px) {
   .navbar {
     padding-right: 5px;
     padding-left: 5px;
+  }
+
+  .hero {
+    height: 900px;
+    grid-template-columns: 350px;
+    grid-template-rows: 400px;
+    margin-top: 0;
+  }
+
+  .myInfo {
+    grid-column: 2/-2;
+  }
+  .heroImg {
+    grid-column: 1/2;
   }
 }
