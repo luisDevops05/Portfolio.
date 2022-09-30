@@ -125,6 +125,44 @@ body {
   color: white;
   text-decoration: underline;
 }
+
+/* projects section */
+.projectsInfo {
+  color: white;
+  text-align: center;
+}
+
+.projectsMain {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 10px;
+  justify-content: center;
+}
+/* q stands for  all grid child containers */
+.q {
+  border: solid white 1px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.762);
+  text-align: center;
+}
+
+.q h5 {
+  margin-top: 10px;
+}
+.q p {
+  text-align: left;
+}
+
+.q a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.q a:hover {
+  color: black;
+  text-decoration: underline hotpink;
+}
 /* refactor this later footer section */
 .footerMain {
   border-top: solid white 1px;
@@ -188,13 +226,14 @@ body {
   .expContainer {
     grid-template-columns: 300px;
     gap: 0;
+    margin-top: 0;
   }
 
   .contactGrid {
     grid-template-columns: 300px;
     justify-content: center;
     align-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   .contactCon h2 {
@@ -209,4 +248,19 @@ body {
     border-bottom: none;
     margin-bottom: 30px;
   }
+
+  .exp h2 {
+    padding-top: 20px;
+  }
+
+  .projectsMain {
+    grid-template-columns: repeat(1, 300px);
+  }
 }
+/* .projectsMain {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  grid-template-rows: repeat(2, 200px);
+  gap: 10px;
+  justify-content: center;
+} */
