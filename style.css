@@ -97,6 +97,26 @@ body {
 .social a {
   padding: 10px;
 }
+
+.expContainer {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: center;
+  align-content: center;
+  gap: 100px;
+  border-bottom: 1px solid white;
+  margin-bottom: 30px;
+}
+
+.exp {
+  color: white;
+  text-align: center;
+}
+.exp ul li {
+  list-style: square;
+  text-align: left;
+}
+
 @media only screen and (max-width: 414px) {
   .navbar {
     padding-right: 5px;
@@ -126,5 +146,10 @@ body {
   }
   #linkedin {
     height: 20px;
+  }
+
+  .expContainer {
+    grid-template-columns: 300px;
+    gap: 0;
   }
 }
