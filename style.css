@@ -69,7 +69,34 @@ body {
   font-size: 20px;
   line-height: 1.5;
 }
+/* refactor this later  */
+.footerMain {
+  border-top: solid white 1px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
+#git {
+  height: 40px;
+}
+#linkedin {
+  height: 30px;
+}
+
+.copyright {
+  text-align: left;
+  color: white;
+}
+.social {
+  text-align: right;
+}
+.social a {
+  padding: 10px;
+}
 @media only screen and (max-width: 414px) {
   .navbar {
     padding-right: 5px;
@@ -89,5 +116,15 @@ body {
   }
   .hero p {
     font-size: 18px;
+  }
+  .copyright h6 {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+  #git {
+    height: 25px;
+  }
+  #linkedin {
+    height: 20px;
   }
 }
