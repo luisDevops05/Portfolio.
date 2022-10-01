@@ -146,6 +146,7 @@ body {
   color: black;
   background-color: rgba(255, 255, 255, 0.762);
   text-align: center;
+  border-radius: 5%;
 }
 
 .q h5 {
@@ -214,6 +215,11 @@ body {
 
   .contactGrid {
     grid-template-columns: 510px 510px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .expContainer {
+    gap: 80px;
   }
 }
 
