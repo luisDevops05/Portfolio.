@@ -192,6 +192,15 @@ body {
 .social a {
   padding: 10px;
 }
+@media only screen and (max-width: 1600px) {
+  .expContainer {
+    gap: 80px;
+  }
+
+  .contactGrid {
+    grid-template-columns: 500px 500px;
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .expContainer {
